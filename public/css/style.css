@@ -62,22 +62,29 @@ body section img {
 main {
     background-color: #ebebeb;
 }
+
 main {
     width: 90%;
     margin: 0 auto;
 }
-main section h3 {
+
+main section h2 {
+    color: #666;
+    font-size: 24px;
     margin: 20px 0;
     text-align: center;
 }
+
 main section article {
     margin: 20px 0;
     padding: 15px;
     background-color: white;
 }
+
 main form p {
     margin: 0;
 }
+
 main form p input {
     width: 100%;
     padding: 10px;
@@ -85,34 +92,29 @@ main form p input {
     border-radius: 5px;
     border: solid 0px black;
 }
+
 main form p input[type="submit"] {
     color: white;
     background-color: #0044AA;
 }
+
 main form p input[type="submit"]:hover {
     background-color: #0022AA;
 }
+
 main form p input[type="reset"] {
     color: white;
     background-color: #AA0044;
 }
+
 main form p input[type="reset"]:hover {
     background-color: #CC1155;
 }
-.img-producto {
+
+main section article img{
     width: 100%;
 }
-.descuento {
-    color: #39b54a;
-    font-size: 16px;
-}
-.precio {
-    font-size: 18px;
-}
-.descripcion {
-    font-size: 16px;
-}
-.fa-truck {
+main section article i {
     color: #39b54a;
 }
 
@@ -128,6 +130,17 @@ h6 {
     font-size: 18px;
     color: #666;
     margin: auto;
+}
+.precio {
+    font-size: 18px;
+}
+.descuento {
+    color: #39b54a;
+    font-size: 16px;
+}
+.descripcion,
+main form p label {
+    font-size: 16px;
 }
 
 /* FOOTER */
