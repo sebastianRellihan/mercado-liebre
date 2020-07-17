@@ -1,2 +1,2 @@
 # Mercado Liebre
-Ejercitación clases sincrónicas > Construcción sitio web
+Ejercitación clases sincrónicas HTML & CSS
