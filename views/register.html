@@ -12,10 +12,15 @@
 
 <body>
     <header>
-        <a href="/"><img src="/img/logo-mercado-liebre.svg" alt="Logo Mercado Libre"></a>
-        <p>Lugar para poner barra de busqueda</p>
+        <div class="logo-search">
+            <a href="/"><img src="/img/logo-mercado-liebre.svg" alt="Logo Mercado Libre"></a>
+            <form action="GET">
+                <input type="text" placeholder="Buscar productos">
+                <button type="submit"><i class="fas fa-search"></i></button>
+            </form>
+        </div>
         <p><i class="fas fa-hand-holding-usd"></i> Compra en cuotas y sin tarjeta de credito</p>
-        <div>
+        <div class="menu-button">
             <i class="fas fa-bars"></i>
         </div>
         <nav>
@@ -64,26 +69,38 @@
             <p>
                 <input type="text" name="address" id="address" placeholder="Domicilio">
             </p>
-            <p>
-                <strong><label for="perfil">Perfil del usuario:</label></strong><br>
-                <input type="radio" name="perfil" id="comprador" value="comprador">
-                <label for="comprador">Comprador</label>
-                <input type="radio" name="perfil" id="vendedor" value="vendedor">
-                <label for="vendedor">Vendedor</label>
-            </p>
-            <p>
-                <strong><label for="">Intereses:</label></strong><br>
-                <input type="checkbox" value="electro" name="intereses" id="electro" checked>
-                <label for="electro">Electro</label>
-                <input type="checkbox" value="moda" name="intereses" id="moda" checked>
-                <label for="moda">Moda</label>
-                <input type="checkbox" value="hogar" name="intereses" id="hogar" checked>
-                <label for="hogar">Hogar</label>
-                <input type="checkbox" value="juguetes" name="intereses" id="juguetes" checked>
-                <label for="juguetes">Juguetes</label>
-                <input type="checkbox" value="vidaSana" name="intereses" id="vidaSana" checked>
-                <label for="vidaSana">Vida sana</label>
-            </p>
+            <article class="register-form">
+                <strong><label for="perfil">Perfil del usuario:</label></strong>
+                <div class="register-form-user-profile">
+                    <input type="radio" name="perfil" id="comprador" value="comprador">
+                    <label for="comprador">Comprador</label>
+                    <input type="radio" name="perfil" id="vendedor" value="vendedor">
+                    <label for="vendedor">Vendedor</label>
+                </div>
+                <strong><label for="">Intereses:</label></strong>
+                <div class="register-form-interests">
+                    <p>
+                        <input type="checkbox" value="electro" name="intereses" id="electro" checked>
+                        <label for="electro">Electro</label>
+                    </p>
+                    <p>
+                        <input type="checkbox" value="moda" name="intereses" id="moda" checked>
+                        <label for="moda">Moda</label>
+                    </p>
+                    <p>
+                        <input type="checkbox" value="hogar" name="intereses" id="hogar" checked>
+                        <label for="hogar">Hogar</label>
+                    </p>
+                    <p>
+                        <input type="checkbox" value="juguetes" name="intereses" id="juguetes" checked>
+                        <label for="juguetes">Juguetes</label>
+                    </p>
+                    <p>
+                        <input type="checkbox" value="vidaSana" name="intereses" id="vidaSana" checked>
+                        <label for="vidaSana">Vida sana</label>
+                    </p>
+                </div>
+            </article>
             <p>
                 <strong><label for="userPhoto">Elegí tu foto de usuario:</label></strong><br>
                 <input type="file" id="userPhoto" name="userPhoto" accept="image/png, image/jpeg">
